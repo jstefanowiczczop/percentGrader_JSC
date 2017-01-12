@@ -28,6 +28,12 @@ public class PercentGraderTest {
     }
 
     @Test
+    public void percent75() {
+        PercentGrader p = new PercentGrader();
+        Assertions.assertThat(p.checkGrade(75)).isEqualTo(4);
+    }
+
+    @Test
     public void percent50() {
         PercentGrader p = new PercentGrader();
         Assertions.assertThat(p.checkGrade(50)).isEqualTo(2);
