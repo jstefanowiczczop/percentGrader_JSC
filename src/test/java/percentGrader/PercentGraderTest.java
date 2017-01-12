@@ -10,46 +10,39 @@ import org.junit.Test;
 public class PercentGraderTest {
 
     @Test
-    public void precent98() {
-
+    public void percent98() {
         PercentGrader p = new PercentGrader();
-        Assertions.assertThat(p.checkX(98)).isEqualTo(6);
+        Assertions.assertThat(p.checkGrade(98)).isEqualTo(6);
     }
 
     @Test
-    public void precent83() {
-
+    public void percent83() {
         PercentGrader p = new PercentGrader();
-        Assertions.assertThat(p.checkX(83)).isEqualTo(4);
+        Assertions.assertThat(p.checkGrade(83)).isEqualTo(4);
     }
 
     @Test
-    public void precent70() {
-
+    public void percent70() {
         PercentGrader p = new PercentGrader();
-        Assertions.assertThat(p.checkX(70)).isEqualTo(3);
+        Assertions.assertThat(p.checkGrade(70)).isEqualTo(3);
     }
 
     @Test
-    public void precent50() {
-
+    public void percent50() {
         PercentGrader p = new PercentGrader();
-        Assertions.assertThat(p.checkX(50)).isEqualTo(2);
+        Assertions.assertThat(p.checkGrade(50)).isEqualTo(2);
 
     }
 
     @Test
-    public void precent20() {
-
+    public void percent20() {
         PercentGrader p = new PercentGrader();
-        Assertions.assertThat(p.checkX(20)).isEqualTo(1);
+        Assertions.assertThat(p.checkGrade(20)).isEqualTo(1);
     }
 
-@Test
-    public void precent95() {
-
+    @Test
+    public void percent95() {
         PercentGrader p = new PercentGrader();
-    Assertions.assertThat(p.checkX(93)).isEqualTo(5);
-
+        Assertions.assertThat(p.checkGrade(93)).isEqualTo(5);
     }
 }
